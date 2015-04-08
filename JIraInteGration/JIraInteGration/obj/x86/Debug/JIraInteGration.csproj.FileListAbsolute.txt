@@ -1,0 +1,12 @@
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JIraInteGration.rxtmg
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JIraInteGration.rxtst
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JIraInteGration.exe.config
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JIraInteGration.exe
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JIraInteGration.pdb
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JiraReporter.dll
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\RestSharp.dll
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\TechTalk.JiraRestClient.dll
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\bin\Debug\JiraReporter.pdb
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\obj\x86\Debug\JIraInteGration.csprojResolveAssemblyReference.cache
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\obj\x86\Debug\JIraInteGration.exe
+C:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\obj\x86\Debug\JIraInteGration.pdb

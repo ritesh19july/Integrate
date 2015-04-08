@@ -1,0 +1,119 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1FD7C418-B660-475F-B2CC-138AA703490B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JIraInteGration</RootNamespace>
+    <AssemblyName>JIraInteGration</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <projectdefaultrepository>bf710101-8acc-40e7-818d-954c9b968546</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="JiraReporter">
+      <HintPath>..\..\..\..\..\Downloads\RanorexJiraIntegrationLibs (2)\JiraReporter.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\..\..\Downloads\Ranorex-Jira-Integration-master\Ranorex-Jira-Integration-master\JiraReporter\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.JiraRestClient">
+      <HintPath>..\..\..\..\..\Downloads\Ranorex-Jira-Integration-master\Ranorex-Jira-Integration-master\JiraReporter\TechTalk.JiraRestClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8578dd50-7db1-411b-b488-d004a41d5ba4</id>
+    </Compile>
+    <Compile Include="JIraInteGrationRepository.cs">
+      <BoundTo>bf710101-8acc-40e7-818d-954c9b968546</BoundTo>
+      <DependentUpon>JIraInteGrationRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ef9e6944-e35f-419e-8418-a6f797a4c1d4</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>18e1df04-e6a5-4c2b-ae93-9e3b27d55537</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>80ee96e1-3d43-4e97-bd24-46246a9437cb</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12c4369b-778e-4ea6-9929-1461ec554e20</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>80ee96e1-3d43-4e97-bd24-46246a9437cb</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fba9070c-5c24-4bd1-8108-a4afcd32d2be</id>
+    </Compile>
+    <None Include="app.config">
+      <id>dc3c50f0-d843-4dba-8fa1-54a376d05f83</id>
+    </None>
+    <None Include="JIraInteGrationRepository.rximg">
+      <BoundTo>bf710101-8acc-40e7-818d-954c9b968546</BoundTo>
+      <DependentUpon>JIraInteGrationRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>f2024846-7d9a-4083-a044-dd7208f760d6</id>
+    </None>
+    <None Include="JIraInteGrationRepository.rxrep">
+      <id>bf710101-8acc-40e7-818d-954c9b968546</id>
+      <repoid>8f5811c7-29a0-4df6-a782-d5d249b8f228</repoid>
+      <reporootid>5f7a5679-6a67-4563-8198-51892e1ba010</reporootid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>bf710101-8acc-40e7-818d-954c9b968546</BoundTo>
+      <id>80ee96e1-3d43-4e97-bd24-46246a9437cb</id>
+      <recordtableid>742ac280-4396-4eff-9126-0366f1efac6c</recordtableid>
+    </None>
+    <Content Include="JIraInteGration.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2d7a5f47-955e-400e-816e-11ed48df2baf</id>
+    </Content>
+    <Content Include="JIraInteGration.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>2796e768-cda9-4b00-8f65-6e123da001f9</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>

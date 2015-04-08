@@ -1,0 +1,141 @@
+﻿<testsuite
+name="JIraInteGration"
+rxversion="5.3.0.22324"
+id="7af998f8-29f3-4102-b7e8-902e371f5f5a"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+reportlevel="Info;20">
+	<content>
+		<testcase
+		name="TestCase"
+		id="ed9e88e4-46c8-4770-b32d-50694a42b555">
+			<parameters>
+				<param
+				name="JiraUserName"
+				value="ritesh.kumar@crestechglobal.com"/>
+				<param
+				name="JiraPassword"
+				value="changeme123"/>
+				<param
+				name="JiraServerURL"
+				value="https://wwetech.jira.com/login?dest-url=%2Fsecure%2FDashboard.jspa"/>
+				<param
+				name="JiraProjectKey"
+				value="ENH"/>
+				<param
+				name="JiraIssueType"
+				value="Bug"/>
+				<param
+				name="JiraSummary"
+				value="demo"/>
+				<param
+				name="JiraDescription"
+				value="Demo"/>
+				<param
+				name="JiraLabels"
+				value="Demo"/>
+			</parameters>
+			<setup
+			name="setup"
+			id="1acfa08e-2f45-43d6-95c8-da406c1a4386">
+				<testmodule
+				name="InitializeJiraReporter"
+				id="268b5b9d-5502-41ec-b768-d81644218b88"
+				ref="0c593212-390b-4ec4-afa2-c63525001f3c"
+				type="UserCode">
+					<databinding>
+						<var
+						variablename="JiraUserName"
+						variableid="87147480-A368-4C8D-935A-AC9928641B17"
+						dataname="JiraUserName"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraPassword"
+						variableid="D4637164-3891-47A1-A96E-77396F53F387"
+						dataname="JiraPassword"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraServerURL"
+						variableid="2D58EEE0-06DE-4D7E-9C04-DCA5CD7A1A91"
+						dataname="JiraServerURL"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+					</databinding>
+				</testmodule>
+			</setup>
+			<testcase
+			name="demo"
+			id="1de3ca1b-0a6e-445c-9a4d-45a68cbdf146">
+				<testmodule
+				name="Recording1"
+				id="6c9282f3-33c8-4d1b-8d06-f824daa08f89"
+				ref="742ac280-4396-4eff-9126-0366f1efac6c"
+				type="Recording"/>
+			</testcase>
+			<teardown
+			name="teardown"
+			id="7e711e00-7543-42f9-a9bb-e82fa3606955">
+				<testmodule
+				name="AutoCreateNewIssueIfTestCaseFails"
+				id="97d319c7-9b80-4a2b-a4eb-37092aed2059"
+				ref="de17f33e-345f-416f-9f58-505b5e34aae3"
+				type="UserCode">
+					<databinding>
+						<var
+						variablename="JiraProjectKey"
+						variableid="2DC0BBB3-C44A-42B6-A695-9FB1ABFF8D84"
+						dataname="JiraProjectKey"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraSummary"
+						variableid="E16AC939-1D71-4936-8009-DE50E23325CA"
+						dataname="JiraSummary"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraIssueType"
+						variableid="D9248964-3F28-4ABE-A5A8-324C190CF2F4"
+						dataname="JiraIssueType"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraDescription"
+						variableid="835F55D5-961E-4F62-AAE1-0AA992C725EF"
+						dataname="JiraDescription"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+						<var
+						variablename="JiraLabels"
+						variableid="AB382EAB-9609-430A-B18E-46B19A493A5F"
+						dataname="JiraLabels"
+						datasourceid="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+					</databinding>
+				</testmodule>
+			</teardown>
+		</testcase>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="1de3ca1b-0a6e-445c-9a4d-45a68cbdf146"/>
+			<testcase
+			id="7af998f8-29f3-4102-b7e8-902e371f5f5a"/>
+			<testcase
+			id="ed9e88e4-46c8-4770-b32d-50694a42b555"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+		<reference>
+			JiraReporter.dll
+		</reference>
+		<reference>
+			RestSharp.dll
+		</reference>
+		<reference>
+			TechTalk.JiraRestClient.dll
+		</reference>
+	</references>
+</testsuite>

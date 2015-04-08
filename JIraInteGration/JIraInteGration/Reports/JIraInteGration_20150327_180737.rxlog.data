@@ -1,0 +1,378 @@
+﻿<report>
+	<activity
+	user="ankit.gupta"
+	host="CTNL1134KESHAV"
+	rxversion="5.3.0.22324"
+	osversion="Windows 7 Service Pack 1 32bit"
+	runtimeversion="4.0.30319.17929"
+	procarch="32bit"
+	language="en-US"
+	screenresolution="1366x768"
+	timestamp="3/27/2015 6:07:37 PM"
+	timestampiso="2015-03-27T12:37:37"
+	timeoutfactor="1"
+	result="Success"
+	duration="0ms"
+	durationms="0"
+	type="root"
+	rid="29ecc58415e47080"
+	totalerrorcount="1"
+	totalwarningcount="0"
+	totalsuccesscount="2"
+	totalfailedcount="0"
+	totalblockedcount="0">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+		testsuitename="JIraInteGration"
+		runconfigname="TestRun"
+		runlabel=""
+		maxchildren="1"
+		result="Success"
+		duration="3814ms"
+		durationms="3814"
+		type="test suite"
+		rid="665950936ca47b5"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="2"
+		totalfailedcount="0"
+		totalblockedcount="0">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+			testcasename="TestCase"
+			testcaseid="ed9e88e4-46c8-4770-b32d-50694a42b555"
+			maxchildren="1"
+			result="Success"
+			duration="3790ms"
+			durationms="3790"
+			type="test case"
+			rid="14f80a99ad2a7a12"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="2"
+			totalfailedcount="0"
+			totalblockedcount="0">
+				<params>
+					<param
+					name="JiraUserName">
+						crestech
+					</param>
+					<param
+					name="JiraPassword">
+						crestech@123
+					</param>
+					<param
+					name="JiraServerURL">
+						http://115.112.162.123/login.jsp
+					</param>
+					<param
+					name="JiraProjectKey">
+						ENH
+					</param>
+					<param
+					name="JiraIssueType">
+						Bug
+					</param>
+					<param
+					name="JiraSummary">
+						demo
+					</param>
+					<param
+					name="JiraDescription">
+						Demo
+					</param>
+					<param
+					name="JiraLabels">
+						Demo
+					</param>
+				</params>
+				<detail>
+				</detail>
+				<activity
+				result="Success"
+				duration="944ms"
+				durationms="944"
+				type="test case setup"
+				rid="7448ef71774aa48"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+					modulename="InitializeJiraReporter (JiraReporter)"
+					moduleid="0c593212-390b-4ec4-afa2-c63525001f3c"
+					moduletype="UserCode"
+					result="Success"
+					duration="913ms"
+					durationms="913"
+					type="test module"
+					rid="1fddfbc41368a0cc"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<varbindings>
+							<varbinding
+							name="JiraUserName"
+							value="crestech"/>
+							<varbinding
+							name="JiraPassword"
+							value="crestech@123"/>
+							<varbinding
+							name="JiraServerURL"
+							value="http://115.112.162.123/login.jsp"/>
+						</varbindings>
+						<item
+						time="00:00.159"
+						level="Info"
+						category="Data">
+							<message>
+								Current variable values:<br/>$JiraUserName = 'crestech', $JiraPassword = 'crestech@123', $JiraServerURL = 'http://115.112.162.123/login.jsp'
+							</message>
+							<metainfo
+							loglvl="Info"/>
+						</item>
+						<item
+						time="00:00.958"
+						level="Error"
+						category="User">
+							<message>
+								Could not retrieve server information (InnerException: TechTalk.JiraRestClient.JiraClientException: JIRA returned wrong status: Not Found<br/>   at TechTalk.JiraRestClient.JiraClient`1.AssertStatus(IRestResponse response, HttpStatusCode status) in c:\Users\cbreit\Documents\Visual Studio 2012\Projects\JiraRestClient-master\JiraRestClient\TechTalk.JiraRestClient\JiraClient.cs:line 61<br/>   at TechTalk.JiraRestClient.JiraClient`1.GetServerInfo() in c:\Users\cbreit\Documents\Visual Studio 2012\Projects\JiraRestClient-master\JiraRestClient\TechTalk.JiraRestClient\JiraClient.cs:line 627 -- 
+
+
+
+
+
+
+
+
+
+&lt;html&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge;chrome=1&quot; /&gt;
+    &lt;title&gt;Not Found (404)&lt;/title&gt;
+    
+
+
+&lt;!--[if IE]&gt;&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;var contextPath = '';&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1/_/download/superbatch/css/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+8&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;!--[if lte IE 9]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/56eb127070f9455378d52d81754cb86a/_/download/contextbatch/css/atl.general,jira.global/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/56eb127070f9455378d52d81754cb86a/_/download/contextbatch/css/atl.general,jira.global/batch.css?conditionalComment=lte+IE+8&quot; media=&quot;all&quot;&gt;
+&lt;![endif]--&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/d57fa41e63a8eb00c4658102ca76a48a/_/download/contextbatch/css/jira.general/batch.css&quot; media=&quot;all&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1/_/download/superbatch/js/batch.js&quot; &gt;&lt;/script&gt;
+&lt;!--[if lte IE 8]&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8&quot; &gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/56eb127070f9455378d52d81754cb86a/_/download/contextbatch/js/atl.general,jira.global/batch.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/d57fa41e63a8eb00c4658102ca76a48a/_/download/contextbatch/js/jira.general/batch.js&quot; &gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://jira.cnpl.local/s/en_UShfbwch-1988229788/6096/10/1.3.1/_/download/batch/com.atlassian.administration.atlassian-admin-quicksearch-jira:admin-quicksearch-webresources/com.atlassian.administration.atlassian-admin-quicksearch-jira:admin-quicksearch-webresources.js&quot; &gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/rest/api/1.0/shortcuts/6096/526290c72890640a1a999ec5a5112f51/shortcuts.js&quot;&gt;&lt;/script&gt;
+
+
+    &lt;meta name=&quot;application-name&quot; content=&quot;JIRA&quot; data-name=&quot;jira&quot; data-version=&quot;6.0.1&quot;&gt;
+&lt;/head&gt;
+&lt;body id=&quot;jira&quot; class=&quot;aui-layout aui-theme-default page-type-message&quot; data-version=&quot;6.0.1&quot; &gt;
+&lt;div id=&quot;page&quot;&gt;
+    &lt;header id=&quot;header&quot; role=&quot;banner&quot;&gt;
+        &lt;nav class=&quot;aui-header aui-dropdown2-trigger-group&quot; role=&quot;navigation&quot;&gt;
+            &lt;div class=&quot;aui-header-inner&quot;&gt;
+                &lt;div class=&quot;aui-header-primary&quot;&gt;
+                    &lt;h1 id=&quot;logo&quot; class=&quot;aui-header-logo&quot;&gt;
+                        &lt;a href=&quot;/secure/MyJiraHome.jspa&quot;&gt;&lt;img src=&quot;/images/icon-jira-logo.png&quot; alt=&quot;ShopCluesJira&quot; /&gt;&lt;/a&gt;
+                    &lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- .aui-header-inner--&gt;
+        &lt;/nav&gt;&lt;!-- .aui-header --&gt;
+    &lt;/header&gt;
+    &lt;section id=&quot;content&quot; role=&quot;main&quot;&gt;
+        &lt;div class=&quot;aui-page-panel&quot;&gt;&lt;div class=&quot;aui-page-panel-inner&quot;&gt;
+                &lt;section class=&quot;aui-page-panel-content&quot;&gt;
+                        &lt;header class=&quot;aui-page-header&quot;&gt;&lt;div class=&quot;aui-page-header-inner&quot;&gt;
+                                &lt;div class=&quot;aui-page-header-main&quot;&gt;
+                                        &lt;h1&gt;Not Found (404)&lt;/h1&gt;
+                                    &lt;/div&gt;&lt;!-- .aui-page-header-main --&gt;
+                            &lt;/div&gt;&lt;!-- .aui-page-header-inner --&gt;&lt;/header&gt;&lt;!-- .aui-page-header --&gt;
+                        &lt;div class=&quot;aui-message warning&quot;&gt;&lt;p class=&quot;title&quot;&gt;&lt;strong&gt;/login.jsp/rest/api/2/serverInfo&lt;/strong&gt;&lt;/p&gt;
+                                &lt;p&gt;Could not find what you were looking for. Maybe you should raise an issue.&lt;/p&gt;
+                                &lt;p&gt;&lt;a href=&quot;/secure/MyJiraHome.jspa&quot;&gt;Go to JIRA home&lt;/a&gt;&lt;/p&gt;
+                            &lt;span class=&quot;aui-icon icon-warning&quot;&gt;&lt;/span&gt;&lt;/div&gt;
+                    &lt;/section&gt;&lt;!-- .aui-page-panel-content --&gt;
+            &lt;/div&gt;&lt;!-- .aui-page-panel-inner --&gt;&lt;/div&gt;&lt;!-- .aui-page-panel --&gt;
+    &lt;/section&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;)
+							</message>
+							<metainfo
+							codefile="c:\Users\cbreit\Documents\Visual Studio 2012\Projects\Ranorex-Jira-Integration\JiraReporter\InitializeJiraReporter.cs"
+							codeline="86"
+							loglvl="Error"/>
+						</item>
+					</activity>
+				</activity>
+				<activity
+				testcasename="demo"
+				testcaseid="1de3ca1b-0a6e-445c-9a4d-45a68cbdf146"
+				maxchildren="0"
+				result="Success"
+				duration="2745ms"
+				durationms="2745"
+				type="test case"
+				rid="10c5a029380db6a"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="1"
+				totalfailedcount="0"
+				totalblockedcount="0">
+					<params/>
+					<detail>
+					</detail>
+					<activity
+					modulename="Recording1"
+					moduleid="742ac280-4396-4eff-9126-0366f1efac6c"
+					moduletype="Recording"
+					result="Success"
+					duration="2735ms"
+					durationms="2735"
+					type="test module"
+					rid="2f7ab36218a187e9"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<varbindings/>
+						<item
+						time="00:01.080"
+						level="Info"
+						category="Website">
+							<message>
+								Opening web site 'http://www.google.com' with browser 'IE' in normal mode.
+							</message>
+							<metainfo
+							itemindex="0"
+							codefile="c:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\Recording1.cs"
+							codeline="82"
+							loglvl="Info"/>
+						</item>
+						<item
+						time="00:01.370"
+						level="Info"
+						category="Mouse">
+							<message>
+								Mouse Left Click item 'Google.LstIb' at 74;11.
+							</message>
+							<metainfo
+							type="repoitem"
+							path="/dom[@domain='www.google.co.in']//input[#'lst-ib']"
+							fullname="JIraInteGrationRepository.Google.LstIb"
+							id="3ffee6f3f1fe4e64b958dfcbdf369dff"
+							timeout="60000"
+							codefile="c:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\Recording1.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info"/>
+						</item>
+						<item
+						time="00:03.094"
+						level="Info"
+						category="Keyboard">
+							<message>
+								Key sequence 'hello'.
+							</message>
+							<metainfo
+							itemindex="2"
+							codefile="c:\Users\ankit.gupta\Documents\Ranorex\RanorexStudio Projects\JIraInteGration\JIraInteGration\Recording1.cs"
+							codeline="90"
+							loglvl="Info"/>
+						</item>
+					</activity>
+				</activity>
+				<activity
+				result="Success"
+				duration="96ms"
+				durationms="96"
+				type="test case teardown"
+				rid="2c46e6efd30e6b58"
+				totalerrorcount="0"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="0"
+				totalblockedcount="0">
+					<detail>
+					</detail>
+					<activity
+					modulename="AutoCreateNewIssueIfTestCaseFails (JiraReporter)"
+					moduleid="de17f33e-345f-416f-9f58-505b5e34aae3"
+					moduletype="UserCode"
+					result="Success"
+					duration="89ms"
+					durationms="89"
+					type="test module"
+					rid="1c2716d5dfb6b764"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0">
+						<detail>
+						</detail>
+						<varbindings>
+							<varbinding
+							name="JiraProjectKey"
+							value="ENH"/>
+							<varbinding
+							name="JiraSummary"
+							value="demo"/>
+							<varbinding
+							name="JiraIssueType"
+							value="Bug"/>
+							<varbinding
+							name="JiraDescription"
+							value="Demo"/>
+							<varbinding
+							name="JiraLabels"
+							value="Demo"/>
+						</varbindings>
+						<item
+						time="00:03.819"
+						level="Info"
+						category="Data">
+							<message>
+								Current variable values:<br/>$JiraProjectKey = 'ENH', $JiraSummary = 'demo', $JiraIssueType = 'Bug', $JiraDescription = 'Demo', $JiraLabels = 'Demo'
+							</message>
+							<metainfo
+							loglvl="Info"/>
+						</item>
+					</activity>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>
